@@ -21,10 +21,10 @@ def start
       loop_around
     when "wargames"
       Game.new(Player::Computer.new("X"), Player::Computer.new("O"), Board.new, true).wargames
-      puts "That was fun! Do you want to play again?"
+      puts "Great game! Do you want to play again?"
       loop_around
     else
-      puts "That is an invalid entry"
+      puts "Please choose a valid entry."
       start
   end
 end
